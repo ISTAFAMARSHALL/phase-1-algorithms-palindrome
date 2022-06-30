@@ -1,10 +1,33 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+
+  let revarr = word.split("");
+  
+  let revword = revarr.reverse();
+
+  let joinword = revword.join('');
+
+  if (word === joinword) {
+
+    return true
+
+  } else {
+
+    return false
+
+  }
+
 }
 
+
+
 /* 
-  Add your pseudocode here
-*/
+//   Add your pseudocode here
+// take word and compare it to the reverse of the same word 
+
+// compare the entered string to the reverse of the entered string
+
+// return true if strings match 
+// return false is strings do not match
 
 /*
   Add written explanation of your solution here
